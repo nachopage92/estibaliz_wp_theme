@@ -1,0 +1,90 @@
+/*
+Theme Name: OceanWP-Child por Ignacio
+Version: 1.0
+Description: Tema hijo de OceanWP
+Author: Ignacio 
+Template: oceanwp
+*/
+ 
+@font-face {
+font-family: MoonFlowerBold;
+src: url('/fonts/Moon-Flower-Bold.ttf');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: Aqua;
+src: url('/fonts/aqua.ttf');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: CaviarDreams;
+src: url('/fonts/CaviarDreams.ttf');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: CaviarDreams;
+src: url('/fonts/CaviarDreams_Bold.ttf');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: CaviarDreams;
+src: url('/fonts/CaviarDreams_Italic.ttf');
+font-weight: normal;
+font-style: italic;
+}
+@font-face {
+font-family: CaviarDreams;
+src: url('/fonts/CaviarDreams_BoldItalic.ttf');
+font-weight: bold;
+font-style: italic;
+}
+
+/* -------------------------------------*/
+/* crea dos columnas en espacio parent  */
+/* -------------------------------------*/
+.two-col {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+.tree-col {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+.four-col {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+}
+
+/*..................*/
+#header{
+	position:fixed;
+	height: 50px;
+	display:block;
+	width: 100%;
+	background: black;
+	z-index:9;
+	text-align:right;
+	color: white;
+	padding: 20px 20px 0 0;
+	top:0px;
+}
+
+a link{
+	color: black;
+}
+a visited{
+	color: red;
+}
+a hover{
+	color: yellow;
+}
+a active{
+	color: green;
+}

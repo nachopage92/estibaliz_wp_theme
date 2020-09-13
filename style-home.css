@@ -1,0 +1,196 @@
+/* Defining each section background and styles
+* --------------------------------------- */
+.section{}
+#section0{background-image: url('/imagenes/nuevofondo.jpg');background-size:cover;}
+#section1{background: linear-gradient(black,black);}
+#section2{background: linear-gradient(black,black);}
+#section3{background: linear-gradient(black,black);}
+#section4{background: linear-gradient(black,black);}
+#section5{background: linear-gradient(black,black);}
+
+
+/* box inicio */
+
+.home-box{
+	border: 5px solid white;
+	border-radius: 5px;
+	width: 50%;
+	margin: auto;
+}
+.home-box h1{
+	text-align: center;
+	font-size: 30px;
+	font-family: Aqua;
+}
+.home-box h2{
+	text-align: center;
+	font-size: 20px;
+}
+
+/* texto cita */
+.text-cita{
+	color: white;
+	font-family: CaviarDreams;
+	font-style: italic;
+	text-align: right;
+	font-size: 20px;
+	position: relative;
+	top: 30%;
+	left: 30%;
+	width: 60%;
+}
+
+/* texto biografia */
+
+.text-bio{
+	color: white;
+	font-family: CaviarDreams;
+	padding: 0 5%;
+	margin: 0 auto;
+}
+.text-bio p{
+	font-weight:normal;
+	font-size:18px;
+}
+.text-bio h2{
+	text-align:center;
+	font-weight:bold;
+	font-size:40px;
+}
+
+
+.fila {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.columna {
+  flex: 33.33%;
+  max-width: 33.33%;
+  margin: 0;
+  padding: 0;
+}
+.columna img {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*----------------*/
+
+.container-home{
+	display: grid;
+	grid-template-columns: 33.33% auto 33.33%;
+    grid-template-rows: 50% 50%;
+	background-color: black;
+}
+
+#c-1{
+	grid-template-areas:
+	"perros vacaciones ciruelas"
+	"ellos nunca trompeta";
+}
+
+#c-2{
+	grid-template-areas:
+	"heroe paradero kinerupa"
+	"contagiando joya subpop";
+}
+#c-3{
+	grid-template-areas:
+	"verdemetraje agorafobia yo-queria"
+	" . flauta .";
+}
+.item-home{ 
+	align-self: stretch;
+	width : 100%;
+	height: 230px;
+}
+
+/* tamaño de mi notebook (1366x768) */
+@media only screen and (max-width: 1700px) {
+	.item-home{
+		height: 300px;
+	}
+	.text-cita{
+		font-size: 25px;
+	}
+}
+
+/* tamaño de mi notebook (1366x768) */
+@media only screen and (max-width: 1370px) {
+	.item-home{
+		height: 230px;
+	}
+	.text-cita{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 600px ) {
+	.item-home{
+		height: 150px;
+	}
+	.text-cita{
+		font-size: 15px;
+	}
+}
+
+
+#perros{grid-area: perros; background: url('/imagenes/home/1_perros_sin_cola.png') center no-repeat; background-size: cover;}
+#vacaciones{grid-area: vacaciones; background: url('/imagenes/home/2_las_vacaciones_de_paulina.png') center no-repeat; background-size: cover;}
+#ciruelas{grid-area: ciruelas; background: url('/imagenes/home/3_ciruelas_y_humo_verde.jpg') center no-repeat; background-size: cover;}
+#ellos{grid-area: ellos; background: url('/imagenes/home/4_ellos.png') center no-repeat; background-size: cover;}
+#nunca{grid-area: nunca; background: url('/imagenes/home/5_nunca_te_fuiste.jpg') center no-repeat; background-size: cover;}
+#trompeta{grid-area: trompeta; background: url('/imagenes/home/6_el_chico_de_ la_trompeta.png') center no-repeat; background-size: cover;}
+#heroe{grid-area: heroe; background: url('/imagenes/home/7_heroe.png') center no-repeat; background-size: cover;}
+#paradero{grid-area: paradero; background: url('/imagenes/home/8_paradero_de_antonia.jpg') center no-repeat; background-size: cover;}
+#kinerupa{grid-area: kinerupa; background: url('/imagenes/home/9_kine_rupa.png') center no-repeat; background-size: cover;}
+#contagiando{grid-area: contagiando; background: url('/imagenes/home/10_contagiando_humanidad .png') center no-repeat; background-size: cover;}
+#joya{grid-area: joya; background: url('/imagenes/home/11_joya_de_la_naturaleza.png') center no-repeat; background-size: cover;}
+#subpop{grid-area: subpop; background: url('/imagenes/home/12_SUBPOP.JPG') center no-repeat; background-size: cover;}
+#verdemetraje{grid-area: verdemetraje; background: url('/imagenes/home/14_verdemetrajes.png') center no-repeat; background-size: cover;}
+#agorafobia{grid-area: agorafobia; background: url('/imagenes/home/Agorafobia.jpg') center no-repeat; background-size: cover;} 
+#yo-queria{grid-area: yo-queria; background: url('/imagenes/home/yo_queria_tener.jpg') center no-repeat; background-size: cover;}
+#flauta{grid-area: flauta; background: url('/imagenes/home/La_flauta_magica.jpg') center no-repeat; background-size: cover;}
+
+/*----------------*/
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  width: 100%; 
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(16.5,2.4,25.5,0.8);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+  height: 100%;
+  text-align:center;
+  font-size:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family:CaviarDreams;
+  font-weight:bold;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
