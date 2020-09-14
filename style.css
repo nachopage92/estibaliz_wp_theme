@@ -73,18 +73,38 @@ font-style: italic;
 	text-align:right;
 	color: white;
 	padding: 20px 20px 0 0;
+	margin: 20px 0 0 0;
 	top:0px;
+	font-size: 20px;
 }
 
-a link{
+.header-link link{
 	color: black;
 }
-a visited{
+.header-link visited{
 	color: red;
 }
-a hover{
+.header-link hover{
 	color: yellow;
 }
-a active{
+.header-link active{
 	color: green;
+}
+
+
+
+
+/* :::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::: */
+
+.rTable { display: table; }
+.rTableRow { display: table-row; }
+.rTableHeading { display: table-header-group; }
+.rTableBody { display: table-row-group; }
+.rTableFoot { display: table-footer-group; }
+.rTableCell, .rTableHead {
+	display: table-cell; 
+	font-size:12px;
+	font-family:CaviarDreams;
 }

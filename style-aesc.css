@@ -1,7 +1,7 @@
 /* Defining each section background and styles
 * --------------------------------------- */
 .section{}
-#section0{background-image: url('/imagenes/fondo_avis.jpg');}
+#section0{background-image: url('/imagenes/fondo_aesc.jpg');}
 #section1{background: linear-gradient(black,black);}
 #section2{background: linear-gradient(black,black);}
 #section3{background: linear-gradient(black,black);}
@@ -15,21 +15,21 @@
 
 /* box inicio */
 
-.av-box{
+.aesc-box{
 	width: 50%;
 	margin: 0 auto;
 }
-.av-box h1{
+.aesc-box h1{
 	text-align: center;
 	font-size: 30px;
 	font-family: Aqua;
 }
-.av-box h2{
+.aesc-box h2{
 	text-align: center;
 	font-size: 20px;
 }
 
-.av-container{
+.aesc-container{
 	display: grid;
 	grid-template-columns: 65% auto;
     grid-template-rows: 5% 95%;
@@ -45,7 +45,7 @@
 	top: 0;
 	left: 0;
 }
-.av-container2{
+.aesc-container2{
 	display: grid;
 	grid-template-columns: 65% auto;
     grid-template-rows: auto;
@@ -62,7 +62,7 @@
 	left: 0;
 }
 
-.av-item p{background-color:black;}
+.aesc-item p{background-color:black;}
 #titulo {grid-area:header; padding:0;margin:0;}
 #titulo h2{font-size:25px;text-align:left;}
 #video{

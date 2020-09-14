@@ -1,7 +1,7 @@
 /* Defining each section background and styles
 * --------------------------------------- */
 .section{}
-#section0{background-image: url('/imagenes/fondo_aesc.jpg');}
+#section0{background-image: url('/imagenes/fondo_cine.jpg');}
 #section1{background: linear-gradient(black,black);}
 #section2{background: linear-gradient(black,black);}
 #section3{background: linear-gradient(black,black);}
@@ -85,17 +85,3 @@
 	grid-area:info2
 }
 
-/* :::::::::::::::::::::::::::::::: */
-/* :::::::::::::::::::::::::::::::: */
-/* :::::::::::::::::::::::::::::::: */
-
-.rTable { display: table; }
-.rTableRow { display: table-row; }
-.rTableHeading { display: table-header-group; }
-.rTableBody { display: table-row-group; }
-.rTableFoot { display: table-footer-group; }
-.rTableCell, .rTableHead {
-	display: table-cell; 
-	font-size:12px;
-	font-family:CaviarDreams;
-}
